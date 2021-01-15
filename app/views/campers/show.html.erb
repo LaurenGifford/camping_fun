@@ -1,0 +1,10 @@
+<p>
+<%= "Name: #{@camper.name}"%>
+<%= "Age: #{@camper.age}"%>
+
+<% @camper.activities.each do |activity| %>
+
+<li><%= activity.name %></li>
+<%end%>
+
+</p>
