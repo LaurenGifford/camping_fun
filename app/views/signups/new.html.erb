@@ -4,3 +4,10 @@
 <%= f.number_field :time %>
 <%= f.submit %>
 <% end %>
+
+
+<% if flash[:messages] %>
+<% flash[:messages].each do |message|%>
+    <%= message %>
+    <% end %>
+<% end %>

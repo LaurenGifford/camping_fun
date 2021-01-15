@@ -3,3 +3,9 @@
 <%= f.number_field :age %>
 <%= f.submit %>
 <% end %>
+
+<% if flash[:messages] %>
+<% flash[:messages].each do |message|%>
+    <li><%= message %></li>
+    <% end %>
+<% end %>
